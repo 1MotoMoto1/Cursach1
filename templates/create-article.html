@@ -1,0 +1,24 @@
+{% extends 'base.html '%}
+
+{%block tittle %}
+Главная страница
+{% endblock %}
+
+{%block body %}
+    <div class="container">
+        <h1>Добавление личного дела</h1>
+    <form method="post">
+        <input type="text" name="hirurg" id="hirurg" class="form-control" placeholder="Хирург" ><br>
+        <textarea name="nevrolog" id="nevrolog" class="form-control" placeholder="Невролог" ></textarea><br>
+        <textarea name="okulist" id="okulist" class="form-control" placeholder="Окулист" ></textarea><br>
+        <textarea name="stomatolog" id="stomatolog" class="form-control" placeholder="Стоматолог"></textarea><br>
+        <textarea name="terapevt" id="terapevt" class="form-control" placeholder="Терапевт"></textarea><br>
+        <textarea name="narkolog" id="narkolog" class="form-control" placeholder="Нарколог"></textarea><br>
+        <textarea name="psihiator" id="psihiator" class="form-control"  placeholder="Психиатор"></textarea><br>
+        <textarea name="category" id="category" class="form-control" placeholder="Поставить категорию"></textarea><br>
+        <textarea name="fio" id="fio" class="form-control" placeholder="Фамилия Имя Отчество"></textarea><br>
+        <textarea name="date" id="date" class="form-control" placeholder="Дата"></textarea><br>
+        <input type="submit"  class="btn btn-success" value="Отправить" >
+    </form>
+</div>
+{% endblock %}
